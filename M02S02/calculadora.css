@@ -1,0 +1,39 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid #000;
+  margin: 5% 25%;
+  padding: 1% 10%;
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+button {
+  width: 18%;
+  height: 40px;
+  margin: 1%;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:last-child {
+  background-color: #4caf50;
+  color: white;
+  width: 80%;
+}
+
+button:last-child:hover {
+  background-color: #45a049;
+}

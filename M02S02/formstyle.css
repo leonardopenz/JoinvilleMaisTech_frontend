@@ -1,0 +1,41 @@
+body {
+  color: black;
+  margin: 5% 45%;
+}
+
+fieldset {
+  border: 1px solid #3bbfdc;
+  border-radius: 4px;
+  padding: 28px 16px;
+  margin-bottom: 32px;
+}
+
+#senha,
+#usuario,
+#confirma_senha,
+#telefone,
+#termo_aceite {
+  margin-top: 24px;
+}
+
+button {
+  cursor: pointer;
+  height: 35px;
+  width: 115px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: black;
+}
+
+#cadastro,
+#voltar {
+  border: 1px solid #3bbfdc;
+  background-color: transparent;
+}
+
+#entrar,
+#cadastrar {
+  border: none;
+  background-color: #3bbfdc;
+  color: white;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de celulares</title>
+    <link rel="stylesheet" href="vendaCelulares.css" />
+  </head>
+  <body>
+    <h1>Cadastro de celulares</h1>
+
+    <form action="">
+      <fieldset>
+        <label for="marca">Marca:</label>
+        <select name="marca" id="marca">
+          <option value="Samsung">Samsung</option>
+          <option value="Apple">Apple</option>
+          <option value="Motorola">Motorola</option>
+          <option value="LG">LG</option>
+          <option value="Xiaomi">Xiaomi</option>
+        </select>
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" />
+        <label for="cor">Cor:</label>
+        <input type="text" name="cor" id="cor" />
+        <label for="valor">Valor</label>
+        <input type="number" name="valor" id="valor" />
+        <label for="estado">Estado</label>
+        <div class="radio-group">
+          <input type="radio" name="estado" id="novo" />
+          <label for="novo">Novo</label>
+          <input type="radio" name="estado" id="usado" />
+          <label for="usado">Usado</label>
+        </div>
+        <label for="infos">Demais informações:</label>
+        <textarea name="infos" id="infos"></textarea>
+      </fieldset>
+      <button type="submit">Salvar</button>
+      <button type="button">Voltar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      let entrada = prompt("Informe um número: ");
+      let num1 = parseFloat(entrada);
+
+      let entrada2 = prompt("Informe o próximo número: ");
+      let num2 = parseFloat(entrada2);
+
+      if (num1 > num2) {
+        console.log("Primeiro número é maior que o segundo número!");
+      } else if (num2 > num1) {
+        console.log("O segundo número é maior que o primeiro número!");
+      } else {
+        console.log("Os números são iguais! ");
+      }
+    </script> -->
+
+    <script>
+      let frase = prompt("Informe uma frase: ");
+
+      let localiza = prompt("Informe uma palavras para ser buscada: ");
+
+      let existe = frase.toLowerCase().includes(localiza.toLowerCase());
+
+      alert(existe ? `A palavra ${localiza} foi localizada na frase` : `A palavra ${localiza} NÃO foi localizada na frase`);
+      //   if (existe) {
+      //     alert(`A palavra "${localiza}" foi localizada na frase.`);
+      //   } else {
+      //     alert(`A palavra "${localiza}" NÃO foi encontrada na frase`);
+      //   }
+    </script>
+
+    <!-- <script>
+      let numero = prompt("Informe um número: ");
+
+      if (numero % 2 == 0) {
+        console.log(`O número ${numero} é par!`);
+      } else {
+        console.log(`O número ${numero} é impar!`);
+      }
+    </script> -->
+
+    <!-- <script>
+      let nota = prompt("Informe a nota do Aluno: ");
+
+      if (nota < 6) {
+        console.log(`A nota ${nota} é considerada conceito E`);
+      } else if (nota >= 6 && nota < 6.99) {
+        console.log(`A nota ${nota} é considerada conceito D`);
+      } else if (nota >= 7 && nota < 7.99) {
+        console.log(`A nota ${nota} é considerada conceito C`);
+      } else if (nota >= 8 && nota < 8.99) {
+        console.log(`A nota ${nota} é considerada conceito B`);
+      } else {
+        console.log(`A nota ${nota} é considerada conceito A`);
+      }
+    </script> -->
+  </body>
+</html>

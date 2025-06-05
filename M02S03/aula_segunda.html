@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let entrada = prompt("Informe um número qualquer:");
+
+      let num = parseFloat(entrada);
+
+      let raiz = Math.sqrt(num);
+      let quadrado = Math.pow(num, 2);
+      let divisao = num / 3;
+      let numDecimal = divisao.toFixed(3);
+
+      console.log(
+        "O número selecionado foi" +
+          num +
+          "\n A raiz quadrada deste número é: " +
+          quadrado +
+          "\n O quadrado deste número é: " +
+          quadrado +
+          "\n O número dividido por 3 é: " +
+          numDecimal
+      );
+    </script>
+  </body>
+</html>

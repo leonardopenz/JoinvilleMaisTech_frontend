@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(219, 255, 196);
+  height: 10%;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  gap: 5px;
+}
+
+figure {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(227, 106, 193);
+}
+
+nav {
+  background-color: rgb(255, 88, 88);
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background-color: rgb(196, 243, 255);
+  height: 80%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 5px;
+}
+
+article {
+  background-color: rgb(118, 118, 176);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px 1fr;
+}
+
+section {
+  background-color: rgb(185, 210, 179);
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: rgb(252, 221, 188);
+  height: 10%;
+}
+
+/* Até 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* Até 480px */
+@media screen and (max-width: 480px) {
+}

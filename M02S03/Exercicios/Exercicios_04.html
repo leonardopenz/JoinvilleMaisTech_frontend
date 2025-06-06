@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let regiao = prompt("Informe a região que será o frete");
+      let peso = parseFloat(prompt("Informe o peso do frete"));
+      let valorFrete = 0;
+
+      switch (regiao) {
+        case "Norte":
+          valorFrete = 24 + 2.2 * peso;
+          console.log(`O valor do frete é R$ ${valorFrete.toFixed(2)}`);
+          break;
+        case "Nordeste":
+          valorFrete = 22 + 2.1 * peso;
+          console.log(`O valor do frete é R$ ${valorFrete.toFixed(2)}`);
+          break;
+        case "Centro-Oeste":
+          valorFrete = 20 + 2.0 * peso;
+          console.log(`O valor do frete é R$ ${valorFrete.toFixed(2)}`);
+          break;
+        case "Sudeste":
+          valorFrete = 16 + 1.8 * peso;
+          console.log(`O valor do frete é R$ ${valorFrete.toFixed(2)}`);
+          break;
+        case "Sul":
+          valorFrete = 18 + 1.9 * peso;
+          console.log(`O valor do frete é R$ ${valorFrete.toFixed(2)}`);
+          break;
+        default:
+          console.log("Região inválida. Tente novamente.");
+          break;
+      }
+    </script>
+  </body>
+</html>

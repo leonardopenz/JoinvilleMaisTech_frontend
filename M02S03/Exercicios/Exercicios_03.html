@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dia = prompt("Informe um dia: ");
+      let mes = prompt("Informe um mês: ");
+      let ano = prompt("Informe um ano: ");
+
+      let anovalido = false;
+      let mesvalido = false;
+      let diavalido = false;
+
+      if (ano > 0 && ano < 9999) {
+        if (mes > 0 && mes < 13) {
+          if (mes === 2) {
+            if (dia > 0 && dia < 29) {
+              console.log("Dia válido");
+              diavalido = true;
+            } else {
+              console.log("Dia inválido");
+            }
+          } else if ([1, 3, 5, 7, 8, 10, 12].includes(mes)) {
+            if (dia > 0 && dia < 32) {
+              console.log("Dia válido");
+              diavalido = true;
+            } else {
+              console.log("Dia inválido");
+            }
+          } else {
+            if (dia > 0 && dia < 31) {
+              console.log("Dia válido");
+              diavalido = true;
+            } else {
+              console.log("Dia inválido");
+            }
+          }
+          console.log("Mes válido");
+          mesvalido = true;
+        }
+        console.log("Ano válido");
+        anovalido = true;
+      } else {
+        console.log("Data inválida");
+      }
+      console.log(`Data: ${dia}/${mes}/${ano}`);
+      console.log(`anovalido && mesvalido && diavalido ? "Data válida" : "Data inválida"`);
+    </script>
+  </body>
+</html>

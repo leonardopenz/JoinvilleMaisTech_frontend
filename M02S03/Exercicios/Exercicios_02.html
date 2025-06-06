@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let capital = parseFloat(prompt("Informe o capital a ser investido: "));
+
+      let periodo = parseFloat(prompt("Informe o periodo (em meses) de aplicação: "));
+
+      let capitalComposto = Math.pow(capital * (1 + 0.05), periodo);
+
+      console.log(`Capital composto após ${periodo} períodos: R$ ${capitalComposto.toFixed(3)}`);
+    </script>
+  </body>
+</html>

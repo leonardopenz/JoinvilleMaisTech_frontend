@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let matriz = parseInt(prompt("Informe o número da matriz de identidade"));
+
+      if (!isNaN(matriz) && matriz > 0) {
+        for (let i = 0; i < matriz; i++) {
+          let linha = "";
+          for (let j = 0; j < matriz; j++) {
+            linha += i === j ? "1" : "0";
+          }
+          console.log(linha);
+        }
+      } else {
+        console.log("Número inválido");
+      }
+    </script>
+  </body>
+</html>

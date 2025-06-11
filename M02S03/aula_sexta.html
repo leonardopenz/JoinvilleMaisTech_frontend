@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      let num = parseFloat(prompt("Informe o número: "));
+
+      for (i = 0; i <= 10; i++) {
+        console.log(`${num} x ${i} = ${num * i}`);
+      }
+    </script> -->
+
+    <!-- <script>
+        const numero = prompt("informe um número")
+
+        let resultado = +numero;
+
+        for (let i = 1; i < numero; i++){
+            resultado *= i;
+        }
+
+        console.log(`O fatorial de ${numero} é ${resultado}`)
+    </script> -->
+
+    <script>
+      let numero = Math.floor(Math.random() * 100);
+
+      let entrada = parseInt(prompt("Informe um número"));
+      let tentativas = 0;
+
+      while (entrada != numero) {
+        if (numero > entrada) {
+          console.log("Suba seu palpite!");
+        } else {
+          console.log("Abaixe seu palpite");
+        }
+        tentativas += 1;
+        entrada = parseInt(prompt("Informe outro número"));
+      }
+
+      console.log(`O número era ${numero} e você levou ${tentativas} tentativas`);
+    </script>
+  </body>
+</html>

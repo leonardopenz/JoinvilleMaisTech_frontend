@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      const preco = [12.5, 30, 99.99, 5];
+
+      let prexoFormatado = preco.map((preco) => preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }));
+
+      console.log(prexoFormatado);
+    </script> -->
+
+    <!-- <script>
+      const precos = [12.5, 30, 99.99, 5];
+      const resultados = [];
+
+      precos.forEach((valor) => {
+        resultados.push("R$ " + valor.toFixed(2));
+      });
+
+      console.log(resultados);
+    </script> -->
+    <!-- <script>
+      const emails = ["joao@email.com", "ana@email.com", "lucas@email.com"];
+
+      emails.forEach((email) => {
+        console.log("Enviado e-mail para " + email);
+      });
+    </script> -->
+    <!-- <script>
+      //let obj = new Object();
+      /*let obj = {
+    nome: 'Nome Completo',
+    email: 'nome@mail.com',
+    celular: '15995959595',
+    dtNascimento = '01/01/1990'
+}*/
+      let obj = {};
+
+      obj.nome = "Nome Completo";
+      obj.email = "nome@mail.com";
+      obj["celular"] = "15995959595";
+      obj["dtNascimento"] = "01/01/1990";
+
+      console.log(typeof obj);
+
+      console.log("Nome:", obj.nome);
+      console.log("Nome:", obj["nome"]);
+
+      console.log("Nome:", obj.celular);
+      console.log("Nome:", obj["celular"]);
+    </script> -->
+
+    <!-- <script>
+      let livro = {
+        titulo: "Dom Quixote",
+        autor: "Miguel de Cervantes",
+      };
+
+      livro.anoPublicacao = "1605";
+
+      console.log(livro);
+    </script> -->
+
+    <script>
+      let alunos = {
+        nome,
+        turma,
+        nota,
+      };
+
+      alunos.push(
+        { nome: "Ana", turnma: "8 Série", nota: 5 },
+        { nome: "Bruno", turnma: "8 Série", nota: 7 },
+        { nome: "Carla", turnma: "8 Série", nota: 8 },
+        { nome: "Daniel", turnma: "8 Série", nota: 4 },
+        { nome: "Eduarda", turnma: "8 Série", nota: 10 }
+      );
+
+      console.log(alunos);
+    </script>
+  </body>
+</html>

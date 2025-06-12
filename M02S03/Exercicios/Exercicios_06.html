@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const limite = parseInt(prompt("Digite o número limite para a sequência Fibonacci:"));
+
+      let fibonacci = [0, 1];
+      let i = 1;
+
+      while (true) {
+        const proximo = fibonacci[i] + fibonacci[i - 1];
+        if (proximo > limite) {
+          break;
+        }
+        fibonacci.push(proximo);
+        i++;
+      }
+
+      console.log("Sequência de Fibonacci até o limite:", fibonacci);
+    </script>
+  </body>
+</html>

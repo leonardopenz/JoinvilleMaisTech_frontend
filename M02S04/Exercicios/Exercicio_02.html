@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const vendas = [
+        { produto: "Notebook", valor: 2500 },
+        { produto: "Monitor", valor: 1200 },
+        { produto: "Teclado", valor: 250 },
+      ];
+
+      let total = 0;
+
+      vendas.forEach((venda) => {
+        console.log(`O item: ${venda.produto} foi vendido por R$ ${venda.valor}`);
+        total += venda.valor;
+      });
+
+      console.log("Total de vendas foi: R$ " + total.toFixed(2));
+    </script>
+  </body>
+</html>

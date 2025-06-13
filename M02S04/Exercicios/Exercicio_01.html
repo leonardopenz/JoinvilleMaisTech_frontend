@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Produtos em Estoque</title>
   </head>
   <body>
     <script>
@@ -13,8 +13,8 @@
         { nome: "Teclado", estoque: 2 },
         { nome: "Mouse", estoque: 0 },
       ];
-
-      console.log(produtos.filter(produtos.estoque > 0));
+      let produtosEmEstoque = produtos.filter((produto) => produto.estoque > 0);
+      console.log(produtosEmEstoque);
     </script>
   </body>
 </html>

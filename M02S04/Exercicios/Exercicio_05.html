@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exericio 05</title>
+  </head>
+  <body>
+    <script>
+      const pessoas = [
+        { nome: "Leonardo", idade: 30, cidade: "Joinville" },
+        { nome: "Eduardo", idade: 25, cidade: "Jaraguá" },
+        { nome: "Bruna", idade: 30, cidade: "Joinville" },
+        { nome: "João", idade: 22, cidade: "Joinville" },
+      ];
+
+      function filtrarLista(lista, propriedades, valores) {
+        return lista.filter((item) => {
+          return propriedades.every((prop, index) => item[prop] === valores[index]);
+        });
+      }
+
+      const resultado = filtrarLista(pessoas, ["idade", "cidade"], [30, "Joinville"]);
+
+      console.log(resultado);
+    </script>
+  </body>
+</html>

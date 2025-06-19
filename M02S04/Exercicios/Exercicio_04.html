@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 04</title>
+  </head>
+  <body>
+    <script>
+      const dados = {
+        nome: "João",
+        idade: null,
+        cidade: "São Paulo",
+        email: undefined,
+      };
+
+      for (let chave in dados) {
+        if (dados[chave] === null || dados[chave] === undefined) {
+          delete dados[chave];
+        }
+      }
+
+      console.log(dados);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação de Formulário</title>
+    <link rel="stylesheet" href="exercicio_06.css" />
+  </head>
+  <body>
+    <h2>Formulário de Login</h2>
+
+    <form id="formulario">
+      <div class="form-group">
+        <label for="email">E-mail:</label><br />
+        <input type="text" id="email" name="email" />
+        <p class="erro" id="erroEmail"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha:</label><br />
+        <input type="password" id="senha" name="senha" />
+        <p class="erro" id="erroSenha"></p>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <script src="exercicio_06.js"></script>
+  </body>
+</html>

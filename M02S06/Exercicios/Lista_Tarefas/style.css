@@ -77,3 +77,13 @@ ul li {
   transition: background-color 0.3s ease;
   width: auto;
 }
+
+.btn-excluir:hover {
+  background-color: #c82333;
+}
+
+#concluidas li {
+  background-color: #d4edda;
+  color: #155724;
+  font-style: italic;
+}

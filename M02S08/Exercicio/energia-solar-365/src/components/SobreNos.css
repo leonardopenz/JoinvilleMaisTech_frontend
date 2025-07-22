@@ -1,0 +1,43 @@
+.sobre-nos {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sobre-nos h2 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #17c711;
+}
+
+.sobre-nos figure {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.sobre-nos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-nos figcaption {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+.sobre-nos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: justify;
+}

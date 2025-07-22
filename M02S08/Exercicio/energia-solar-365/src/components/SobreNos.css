@@ -38,6 +38,29 @@
 .sobre-nos p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   text-align: justify;
+}
+
+.dados-mercado {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+}
+
+.dados-mercado h3 {
+  color: #006400;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.dados-mercado ul {
+  padding-left: 20px;
+}
+
+.dados-mercado li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
 }

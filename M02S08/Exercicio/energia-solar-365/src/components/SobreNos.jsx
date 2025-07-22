@@ -1,7 +1,7 @@
 import "./SobreNos.css";
 function SobreNos() {
   return (
-    <div id="#sobre" className="sobre-nos">
+    <div id="sobre" className="sobre-nos">
       <h2>Sobre Nós</h2>
       <figure>
         <img
@@ -13,9 +13,23 @@ function SobreNos() {
           eficiência e confiabilidade.
         </figcaption>
       </figure>
-
-      <p>Bem-vindo à nossa página! Aqui você encontrará informações sobre nossa missão, visão e valores.</p>
-      <p>Nossa equipe é dedicada a fornecer o melhor serviço possível e estamos sempre abertos a feedback.</p>
+      <div className="dados-mercado">
+        <h3>Dados do Mercado Brasileiro (até 2025)</h3>
+        <ul>
+          <li>
+            <strong>Economia na conta de luz:</strong>até 90%
+          </li>
+          <li>
+            <strong>Payback médio:</strong> 4 a 6 anos
+          </li>
+          <li>
+            <strong>Redução de CO2:</strong>~1,5 tCO2 por sistema/ano
+          </li>
+          <li>
+            <strong>Sistemas conectados:</strong> mais de 400.000 (fonte: ANEEL, abril/2025)
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

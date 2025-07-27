@@ -1,0 +1,30 @@
+.container-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.container-contato {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contato h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.container-feedback {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-feedback h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}

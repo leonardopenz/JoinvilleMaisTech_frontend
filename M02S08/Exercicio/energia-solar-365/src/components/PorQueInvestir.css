@@ -2,11 +2,15 @@
   max-width: 900px;
   margin: 60px auto;
   padding: 20px;
-  text-align: center;
+  background-color: #f5f5f5;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .por-que-investir h2 {
-  color: #024d02;
+  color: #2d8659;
   font-size: 1.6rem;
   margin-bottom: 30px;
   text-align: left;

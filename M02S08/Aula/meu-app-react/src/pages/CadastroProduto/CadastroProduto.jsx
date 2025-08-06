@@ -1,9 +1,10 @@
 import { useState } from "react";
-import "./Form.css";
+import "./CadastroProduto.css";
+import axios from "axios";
 
 import { ToastContainer, toast } from "react-toastify";
 import Lottie from "react-lottie";
-import LoadingAnimation from "./assets/loading.json";
+import LoadingAnimation from "../../assets/loading.json";
 
 const defaultOptions = {
   loop: true,
@@ -14,7 +15,7 @@ const defaultOptions = {
   },
 };
 
-function Form() {
+function CadastroProduto() {
   // const [form, setForm] = useState({
   //   name: '',
   //   description: '',
@@ -53,29 +54,79 @@ function Form() {
         flavor: flavor,
       };
 
-      // pegar quais produtos que já tem dentro do localStorage
-      let allProductsInLocalStorage = localStorage.getItem("@products");
-      console.log("allProductsInLocalStorage", allProductsInLocalStorage);
-      // obtem o array de produtos
-      allProductsInLocalStorage = !allProductsInLocalStorage ? [] : JSON.parse(allProductsInLocalStorage);
-      // insere do array o novo produto
-      allProductsInLocalStorage.push(newProduct);
-      // salvar a array no atualizado no local storage
-      localStorage.setItem("@products", JSON.stringify(allProductsInLocalStorage));
+      //Usando Axios
+      axios
+        .post("http://localhost:3000/products", newProduct)
+        .then(() => {
+          setTimeout(() => {
+            toast.success("Produto inserido com sucesso");
 
-      setTimeout(() => {
-        toast.success("Produto inserido com sucesso");
+            setName("");
+            setDescription("");
+            setType("");
+            setIsVegan(false);
+            setIsZeroLactose(false);
+            setFlavor("carne");
+            setPrice("");
 
-        setName("");
-        setDescription("");
-        setType("");
-        setIsVegan(false);
-        setIsZeroLactose(false);
-        setFlavor("carne");
-        setPrice("");
+            setLoading(false);
+          }, 7000);
+        })
+        .catch(() => {
+          toast.error("Houve um erro ao cadastrar. Tente novamente mais tarde!");
+        });
 
-        setLoading(false);
-      }, 7000);
+      // fetch("http://localhost:3000/products", {
+      //   method: "POST",
+      //   body: JSON.stringify(newProduct),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // })
+      //   .then((response) => {
+      //     if (response.ok) {
+      //       setTimeout(() => {
+      //         toast.success("Produto inserido com sucesso");
+
+      //         setName("");
+      //         setDescription("");
+      //         setType("");
+      //         setIsVegan(false);
+      //         setIsZeroLactose(false);
+      //         setFlavor("carne");
+      //         setPrice("");
+
+      //         setLoading(false);
+      //       }, 7000);
+      //     } else {
+      //       throw new Error();
+      //     }
+      //   })
+      //   .catch(() => {
+      //     toast.error("Houve um erro ao cadastrar. Tente novamente mais tarde!");
+      //   });
+
+      //Exemplo para Salvar no LocalStorage
+      // // pegar quais produtos que já tem dentro do localStorage
+      // let allProductsInLocalStorage = localStorage.getItem("@products");
+      // console.log("allProductsInLocalStorage", allProductsInLocalStorage);
+      // // obtem o array de produtos
+      // allProductsInLocalStorage = !allProductsInLocalStorage ? [] : JSON.parse(allProductsInLocalStorage);
+      // // insere do array o novo produto
+      // allProductsInLocalStorage.push(newProduct);
+      // // salvar a array no atualizado no local storage
+      // localStorage.setItem("@products", JSON.stringify(allProductsInLocalStorage));
+    }
+  }
+
+  function alterarPreco(event) {
+    const value = parseFloat(event.target.value);
+
+    if (!value) setPrice("");
+
+    // setPrice(Math.abs(value));
+    if (value >= 0) {
+      setPrice(value);
     }
   }
 
@@ -94,7 +145,7 @@ function Form() {
           }}
         />
 
-        <label>Descrição</label>
+        <label htmlFor="description">Descrição</label>
         <textarea
           value={description}
           onChange={(event) => {
@@ -102,22 +153,8 @@ function Form() {
           }}
         />
 
-        <label>Preço</label>
-        <input
-          type="number"
-          min={0}
-          value={price}
-          onChange={(event) => {
-            const value = parseFloat(event.target.value);
-
-            if (!value) setPrice("");
-
-            // setPrice(Math.abs(value));
-            if (value >= 0) {
-              setPrice(value);
-            }
-          }}
-        />
+        <label htmlFor="price">Preço</label>
+        <input type="number" min={0} value={price} onChange={alterarPreco} />
 
         <label>Tipo</label>
         <select
@@ -208,4 +245,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default CadastroProduto;
